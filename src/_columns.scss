@@ -1,0 +1,31 @@
+$totalColumns: 12;
+
+@mixin generate-columns($prefix, $total: $totalColumns) {
+  @for $i from 1 through $totalColumns {
+    .col.#{$prefix}#{$i} { width: percentage($i / $total); }
+  }
+}
+
+@mixin columns-width-breakpoint($width, $prefix) {
+  @media only screen and (min-width: $width) {
+    @include generate-columns($prefix);
+  }
+}
+
+.col {
+  display: block;
+  width: 100%;
+}
+
+.col.center {
+  justify-content: center;
+}
+
+.col.fill {
+  width: auto;
+  flex-grow: 1;
+}
+
+@include generate-columns("s");
+@include columns-width-breakpoint("576px", "m");
+@include columns-width-breakpoint("993px", "l");
