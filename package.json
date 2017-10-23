@@ -16,6 +16,7 @@
   ],
   "author": "Daniel Moreira",
   "license": "ISC",
+  "main": "dist/css-grid-system.css",
   "bugs": {
     "url": "https://github.com/DanielMor/css-grid-system/issues"
   },
