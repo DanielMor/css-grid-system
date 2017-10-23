@@ -9,8 +9,12 @@
     "type": "git",
     "url": "git+https://github.com/DanielMor/css-grid-system.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "css",
+    "grid",
+    "flex"
+  ],
+  "author": "Daniel Moreira",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/DanielMor/css-grid-system/issues"
@@ -19,6 +23,7 @@
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^4.0.0",
-    "gulp-sass": "^3.1.0"
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.1"
   }
 }
