@@ -8,3 +8,11 @@
 .row.center {
   justify-content: center;
 }
+
+.row.to-left {
+  justify-content: flex-start;
+}
+
+.row.to-right {
+  justify-content: flex-end;
+}
