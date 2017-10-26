@@ -1,3 +1,7 @@
-@import 'base';
-@import 'row';
-@import 'columns';
+@import '../generate';
+
+$breakpoints: (width: "576px", prefix: "m") (width: "993px", prefix: "l");
+$totalColumns: 12;
+
+@include generate-columns("s", $totalColumns);
+@include css-grid-system($breakpoints, $totalColumns);

@@ -1,0 +1,14 @@
+@import 'src/base';
+@import 'src/row';
+@import 'src/columns';
+
+@mixin css-grid-system($breakpoints: (), $columns: 12) {
+
+  @each $breakpoint in $breakpoints {
+    @include generate-columns-on-breakpoint(
+      map-get($breakpoint, "width"),
+      map-get($breakpoint, "prefix"),
+      $columns
+    )
+  }
+}
